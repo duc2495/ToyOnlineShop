@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<!-- Define default-web package: struts-default -->
+	<constant name="struts.devMode" value="true" />
+	<package name="default-web" namespace="/" extends="json-default">
+
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" default="true" />
+		</result-types>
+
+		<global-results>
+			<!-- Define Exception Forward -->
+			<result name="sys_exception">Default.SystemException</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping result="sys_exception"
+				exception="java.lang.Exception" />
+			<exception-mapping result="sys_exception"
+				exception="java.lang.RuntimeException" />
+		</global-exception-mappings>
+
+		<action name="" class="springUserAction" method="homePage">
+			<result>HomePage</result>
+		</action>
+		
+		<action name="login">
+			<result>User.Login</result>
+		</action>
+		
+		<action name="admin">
+			<result>Admin.Page</result>
+		</action>
+		
+		<action name="staff">
+			<result>Staff.Page</result>
+		</action>
+		
+		<action name="customer">
+			<result>Customer.Page</result>
+		</action>
+		
+		<action name="logout">
+			<result type="redirect">
+				<param name="location">/login?logout</param>
+			</result>
+		</action>
+	</package>
+
+	<!-- ===== Include Web Module Configuration ===== -->
+	<include file="struts-customer.xml" />
+	<include file="struts-admin.xml"/>
+	<include file="struts-staff.xml"/>
+</struts>
