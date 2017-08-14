@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Define Struts Tile for Front-End module -->
+	<definition name="Default.Web" template="/layout/layout-default.jsp">
+		<put-attribute name="topbar" value="/layout/topbar.jsp" />
+		<put-attribute name="navbar" value="/layout/navbar.jsp" />
+		<put-attribute name="banner" value="/layout/banner.jsp" />
+		<put-attribute name="body" value="/layout/body-empty.jsp" />
+		<put-attribute name="footer" value="/layout/footer.jsp" />
+
+		<put-list-attribute name="default-css">
+			<add-attribute value="/bootstrap/css/bootstrap.min.css" />
+			<add-attribute value="/bootstrap/css/bootstrap-responsive.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="default-js">
+			<add-attribute value="/bootstrap/js/bootstrap.min.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Default.SystemException" extends="Default.Web">
+		<put-attribute name="body" value="/exception/system_exception.jsp" />
+	</definition>
+
+	<definition name="HomePage" extends="Default.Web">
+		<put-attribute name="body" value="/index.jsp" />
+		<!-- <put-attribute name="banner" value="/layout/slider.jsp" /> -->
+		<put-list-attribute name="themes-css">
+			<add-attribute value="/themes/css/bootstrappage.css" />
+			<add-attribute value="/themes/css/flexslider.css" />
+			<add-attribute value="/themes/css/main.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-js">
+			<add-attribute value="/themes/js/jquery-1.7.2.min.js" />
+			<add-attribute value="/themes/js/superfish.js" />
+			<add-attribute value="/themes/js/jquery.scrolltotop.js" />
+		</put-list-attribute>
+	</definition>
+
+</tiles-definitions>
