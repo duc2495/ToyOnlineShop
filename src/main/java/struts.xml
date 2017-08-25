@@ -28,9 +28,9 @@
 		<action name="" class="framgiavn.project01.web.action.UserAction" method="homePage">
 			<result>HomePage</result>
 		</action>
-
 	</package>
 
 	<!-- ===== Include Web Module Configuration ===== -->
 	<include file="struts-user.xml" />
+	<include file="struts-admin.xml" />
 </struts>

@@ -1,43 +1,100 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tiles-definitions PUBLIC
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
 	<!-- Define Struts Tile for Front-End module -->
-	<definition name="Default.Web" template="/layout/layout-default.jsp">
-		<put-attribute name="topbar" value="/layout/topbar.jsp" />
-		<put-attribute name="navbar" value="/layout/navbar.jsp" />
-		<put-attribute name="banner" value="/layout/banner.jsp" />
-		<put-attribute name="body" value="/layout/body-empty.jsp" />
-		<put-attribute name="footer" value="/layout/footer.jsp" />
+	<definition name="Default.Web" template="/front-end/layout/layout-default.jsp">
+		<put-attribute name="topbar" value="/front-end/layout/topbar.jsp" />
+		<put-attribute name="navbar" value="/front-end/layout/navbar.jsp" />
+		<put-attribute name="banner" value="/front-end/layout/banner.jsp" />
+		<put-attribute name="body" value="/front-end/layout/body-empty.jsp" />
+		<put-attribute name="footer" value="/front-end/layout/footer.jsp" />
 
 		<put-list-attribute name="default-css">
-			<add-attribute value="/bootstrap/css/bootstrap.min.css" />
-			<add-attribute value="/bootstrap/css/bootstrap-responsive.min.css" />
+			<add-attribute value="/front-end/bootstrap/css/bootstrap.min.css" />
+			<add-attribute
+				value="/front-end/bootstrap/css/bootstrap-responsive.min.css" />
 		</put-list-attribute>
-		<put-list-attribute name="default-js">
-			<add-attribute value="/bootstrap/js/bootstrap.min.js" />
+
+		<put-list-attribute name="themes-css">
+			<add-attribute value="/front-end/themes/css/bootstrappage.css" />
+			<add-attribute value="/front-end/themes/css/flexslider.css" />
+			<add-attribute value="/front-end/themes/css/main.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-js">
+			<add-attribute value="/front-end/themes/js/jquery-1.7.2.min.js" />
+			<add-attribute value="/front-end/bootstrap/js/bootstrap.min.js" />
+			<add-attribute value="/front-end/themes/js/superfish.js" />
+			<add-attribute value="/front-end/themes/js/jquery.scrolltotop.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- Define Struts Tile for Back-End module -->
+	<definition name="Default.Web.Admin"
+		template="/back-end/layout-admin/layout-admin-default.jsp">
+		<put-attribute name="sidebar" value="/back-end/layout-admin/sidebar.jsp" />
+		<put-attribute name="header" value="/back-end/layout-admin/header.jsp" />
+		<put-attribute name="main-content"
+			value="/back-end/layout-admin/main-content-empty.jsp" />
+		<put-attribute name="footer" value="/back-end/layout-admin/footer.jsp" />
+		<put-attribute name="user-setting"
+			value="/back-end/layout-admin/user-setting.jsp" />
+		<put-attribute name="js-load"
+			value="/back-end/layout-admin/js-load-empty.jsp" />
+
+		<put-list-attribute name="default-css">
+			<add-attribute value="/back-end/themes-admin/css/bootstrap.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-css">
+			<add-attribute value="/back-end/themes-admin/css/plugins.css" />
+			<add-attribute value="/back-end/themes-admin/css/main.css" />
+			<add-attribute value="/back-end/themes-admin/css/themes.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-js">
+			<add-attribute
+				value="/back-end/themes-admin/js/vendor/modernizr-respond.min.js" />
+			<add-attribute
+				value="/back-end/themes-admin/js/vendor/jquery-1.11.2.min.js" />
+			<add-attribute value="/back-end/themes-admin/js/vendor/bootstrap.min.js" />
+			<add-attribute value="/back-end/themes-admin/js/plugins.js" />
+			<add-attribute value="/back-end/themes-admin/js/app.js" />
+		</put-list-attribute>
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/back-end/themes-admin/js/pages/empty.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Default.Web.Login"
+		template="/back-end/layout-login/layout-login-default.jsp">
+		<put-attribute name="body" value="/back-end/layout-login/body-empty.jsp" />
+		<put-attribute name="js-load"
+			value="/back-end/layout-login/js-load-empty.jsp" />
+
+		<put-list-attribute name="default-css">
+			<add-attribute value="/back-end/themes-admin/css/bootstrap.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-css">
+			<add-attribute value="/back-end/themes-admin/css/plugins.css" />
+			<add-attribute value="/back-end/themes-admin/css/main.css" />
+			<add-attribute value="/back-end/themes-admin/css/themes.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-js">
+			<add-attribute
+				value="/back-end/themes-admin/js/vendor/modernizr-respond.min.js" />
+			<add-attribute
+				value="/back-end/themes-admin/js/vendor/jquery-1.11.2.min.js" />
+			<add-attribute value="/back-end/themes-admin/js/vendor/bootstrap.min.js" />
+			<add-attribute value="/back-end/themes-admin/js/plugins.js" />
+			<add-attribute value="/back-end/themes-admin/js/app.js" />
+		</put-list-attribute>
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/back-end/themes-admin/js/pages/empty.js" />
 		</put-list-attribute>
 	</definition>
 
 	<definition name="Default.SystemException" extends="Default.Web">
 		<put-attribute name="body" value="/exception/system_exception.jsp" />
 	</definition>
-
-	<definition name="HomePage" extends="Default.Web">
-		<put-attribute name="body" value="/index.jsp" />
-		<!-- <put-attribute name="banner" value="/layout/slider.jsp" /> -->
-		<put-list-attribute name="themes-css">
-			<add-attribute value="/themes/css/bootstrappage.css" />
-			<add-attribute value="/themes/css/flexslider.css" />
-			<add-attribute value="/themes/css/main.css" />
-		</put-list-attribute>
-		<put-list-attribute name="themes-js">
-			<add-attribute value="/themes/js/jquery-1.7.2.min.js" />
-			<add-attribute value="/themes/js/superfish.js" />
-			<add-attribute value="/themes/js/jquery.scrolltotop.js" />
-		</put-list-attribute>
-	</definition>
-
 </tiles-definitions>

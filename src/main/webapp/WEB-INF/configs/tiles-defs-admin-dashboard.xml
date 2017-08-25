@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Define Struts Tile for Back-End module -->
+
+	<!-- Define Struts Tile for Dashboard -->
+	<definition name="AdminDashboard" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/back-end/dashboard/dashboard.jsp" />
+		<put-attribute name="js-load" value="/back-end/dashboard/js-load.jsp" />
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/back-end/themes-admin/js/pages/dashboard.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- Define Struts Tile for Customer -->
+	<definition name="AdminCustomer" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/back-end/customer/customer.jsp" />
+	</definition>
+
+	<!-- Define Struts Tile for Orders -->
+	<definition name="AdminOrders" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/back-end/orders/orders.jsp" />
+		<put-attribute name="js-load" value="/back-end/orders/js-load.jsp" />
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/back-end/themes-admin/js/pages/orders.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="AdminOrderView" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/back-end/orders/order-view.jsp" />
+	</definition>
+
+	<!-- Define Struts Tile for Products -->
+	<definition name="AdminProducts" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/back-end/products/products.jsp" />
+		<put-attribute name="js-load" value="/back-end/products/js-load.jsp" />
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/back-end/themes-admin/js/pages/products.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="AdminProductEdit" extends="Default.Web.Admin">
+		<put-attribute name="main-content"
+			value="/back-end/products/product-edit.jsp" />
+	</definition>
+
+</tiles-definitions>

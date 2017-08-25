@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Define Struts Tile for Back-End module -->
+
+	<!-- Define Struts Tile for Login -->
+	<definition name="AdminLogin" extends="Default.Web.Login">
+		<put-attribute name="body" value="/back-end/login/login.jsp" />
+		<put-attribute name="js-load" value="/back-end/login/js-load.jsp" />
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/back-end/themes-admin/js/pages/login.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- Define Struts Tile for Lock -->
+	<definition name="AdminLock" extends="Default.Web.Login">
+		<put-attribute name="body" value="/back-end/lock/lock.jsp" />
+	</definition>
+</tiles-definitions>

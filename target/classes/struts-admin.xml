@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- Configure NameSpace for action admin -->
+	<package name="Admin" namespace="/admin" extends="default-web">
+		<action name="" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminLogin</result>
+		</action>
+
+		<action name="login" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminLogin</result>
+		</action>
+
+		<action name="dashboard" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminDashboard</result>
+		</action>
+
+		<action name="products" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminProducts</result>
+		</action>
+
+		<action name="product_edit" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminProductEdit</result>
+		</action>
+
+		<action name="orders" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminOrders</result>
+		</action>
+
+		<action name="order_view" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminOrderView</result>
+		</action>
+
+		<action name="customer" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminCustomer</result>
+		</action>
+
+		<action name="lock" class="framgiavn.project01.web.action.UserAction"
+			method="homePage">
+			<result>AdminLock</result>
+		</action>
+
+	</package>
+</struts>
