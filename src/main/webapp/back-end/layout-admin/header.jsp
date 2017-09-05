@@ -40,8 +40,7 @@
 	<!-- END Left Header Navigation -->
 
 	<!-- Search Form -->
-	<form action="#" method="post"
-		class="navbar-form-custom" role="search">
+	<form action="#" method="post" class="navbar-form-custom" role="search">
 		<div class="form-group">
 			<input type="text" id="top-search" name="top-search"
 				class="form-control" placeholder="Search..">
@@ -55,16 +54,16 @@
 		<!-- User Dropdown -->
 		<li class="dropdown"><a href="javascript:void(0)"
 			class="dropdown-toggle" data-toggle="dropdown"> <img
-				src="../back-end/themes-admin/img/placeholders/avatars/avatar.jpg" alt="avatar"> <i
-				class="fa fa-angle-down"></i>
+				src="../back-end/themes-admin/img/placeholders/avatars/avatar.jpg"
+				alt="avatar"> <i class="fa fa-angle-down"></i>
 		</a>
 			<ul class="dropdown-menu dropdown-custom dropdown-menu-right">
 				<li class="dropdown-header text-center">Account</li>
-				<li><a href="#modal-user-settings" data-toggle="modal"> <i
+				<li><a href="profile"> <i
+						class="fa fa-user fa-fw pull-right"></i> Profile
+				</a> <a href="#modal-user-settings" data-toggle="modal"> <i
 						class="fa fa-cog fa-fw pull-right"></i> Settings
-				</a> <a href="page_ready_lock_screen.html"><i
-						class="fa fa-lock fa-fw pull-right"></i> Lock Account</a> <a
-					href="login"><i class="fa fa-ban fa-fw pull-right"></i>
+				</a> <a href="login"><i class="fa fa-ban fa-fw pull-right"></i>
 						Logout</a></li>
 			</ul></li>
 		<!-- END User Dropdown -->

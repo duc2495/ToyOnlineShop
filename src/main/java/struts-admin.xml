@@ -46,9 +46,9 @@
 			<result>AdminCustomer</result>
 		</action>
 
-		<action name="lock" class="framgiavn.project01.web.action.UserAction"
+		<action name="profile" class="framgiavn.project01.web.action.UserAction"
 			method="homePage">
-			<result>AdminLock</result>
+			<result>AdminProfile</result>
 		</action>
 
 	</package>

@@ -45,4 +45,9 @@
 			value="/back-end/products/product-edit.jsp" />
 	</definition>
 
+	<!-- Define Struts Tile for Profile -->
+	<definition name="AdminProfile" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/back-end/profile/profile.jsp" />
+	</definition>
+
 </tiles-definitions>

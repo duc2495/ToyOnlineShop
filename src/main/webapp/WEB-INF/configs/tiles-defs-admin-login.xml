@@ -7,16 +7,27 @@
 	<!-- Define Struts Tile for Back-End module -->
 
 	<!-- Define Struts Tile for Login -->
-	<definition name="AdminLogin" extends="Default.Web.Login">
-		<put-attribute name="body" value="/back-end/login/login.jsp" />
-		<put-attribute name="js-load" value="/back-end/login/js-load.jsp" />
+	<definition name="AdminLogin" template="/back-end/login/login.jsp">
+		<put-list-attribute name="default-css">
+			<add-attribute value="/back-end/themes-admin/css/bootstrap.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-css">
+			<add-attribute value="/back-end/themes-admin/css/plugins.css" />
+			<add-attribute value="/back-end/themes-admin/css/main.css" />
+			<add-attribute value="/back-end/themes-admin/css/themes.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-js">
+			<add-attribute
+				value="/back-end/themes-admin/js/vendor/modernizr-respond.min.js" />
+			<add-attribute
+				value="/back-end/themes-admin/js/vendor/jquery-1.11.2.min.js" />
+			<add-attribute value="/back-end/themes-admin/js/vendor/bootstrap.min.js" />
+			<add-attribute value="/back-end/themes-admin/js/plugins.js" />
+			<add-attribute value="/back-end/themes-admin/js/app.js" />
+		</put-list-attribute>
 		<put-list-attribute name="pages-js">
 			<add-attribute value="/back-end/themes-admin/js/pages/login.js" />
 		</put-list-attribute>
-	</definition>
 
-	<!-- Define Struts Tile for Lock -->
-	<definition name="AdminLock" extends="Default.Web.Login">
-		<put-attribute name="body" value="/back-end/lock/lock.jsp" />
 	</definition>
 </tiles-definitions>

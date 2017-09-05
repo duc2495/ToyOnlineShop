@@ -66,34 +66,6 @@
 		</put-list-attribute>
 	</definition>
 
-	<definition name="Default.Web.Login"
-		template="/back-end/layout-login/layout-login-default.jsp">
-		<put-attribute name="body" value="/back-end/layout-login/body-empty.jsp" />
-		<put-attribute name="js-load"
-			value="/back-end/layout-login/js-load-empty.jsp" />
-
-		<put-list-attribute name="default-css">
-			<add-attribute value="/back-end/themes-admin/css/bootstrap.min.css" />
-		</put-list-attribute>
-		<put-list-attribute name="themes-css">
-			<add-attribute value="/back-end/themes-admin/css/plugins.css" />
-			<add-attribute value="/back-end/themes-admin/css/main.css" />
-			<add-attribute value="/back-end/themes-admin/css/themes.css" />
-		</put-list-attribute>
-		<put-list-attribute name="themes-js">
-			<add-attribute
-				value="/back-end/themes-admin/js/vendor/modernizr-respond.min.js" />
-			<add-attribute
-				value="/back-end/themes-admin/js/vendor/jquery-1.11.2.min.js" />
-			<add-attribute value="/back-end/themes-admin/js/vendor/bootstrap.min.js" />
-			<add-attribute value="/back-end/themes-admin/js/plugins.js" />
-			<add-attribute value="/back-end/themes-admin/js/app.js" />
-		</put-list-attribute>
-		<put-list-attribute name="pages-js">
-			<add-attribute value="/back-end/themes-admin/js/pages/empty.js" />
-		</put-list-attribute>
-	</definition>
-
 	<definition name="Default.SystemException" extends="Default.Web">
 		<put-attribute name="body" value="/exception/system_exception.jsp" />
 	</definition>

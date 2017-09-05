@@ -29,13 +29,15 @@
 			<div
 				class="sidebar-section sidebar-user clearfix sidebar-nav-mini-hide">
 				<div class="sidebar-user-avatar">
-					<a href="#"> <img
+					<a href="profile"> <img
 						src="../back-end/themes-admin/img/placeholders/avatars/avatar.jpg"
 						alt="avatar">
 					</a>
 				</div>
 				<div class="sidebar-user-name">Admin</div>
 				<div class="sidebar-user-links">
+					<a href="profile" data-toggle="tooltip"
+						data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
 					<a href="javascript:void(0)" class="enable-tooltip"
 						data-placement="bottom" title="Settings"
 						onclick="$('#modal-user-settings').modal('show');"><i
@@ -47,7 +49,7 @@
 
 			<!-- Sidebar Navigation -->
 			<ul class="sidebar-nav">
-				<li><a href="#" class="sidebar-nav-menu"><i
+				<li class="active"><a href="#" class="sidebar-nav-menu"><i
 						class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i
 						class="gi gi-shopping_cart sidebar-nav-icon"></i><span
 						class="sidebar-nav-mini-hide">Shop Manager</span></a>
@@ -58,31 +60,6 @@
 						<li><a href="products">Products</a></li>
 						<li><a href="product_edit">Product Edit</a></li>
 						<li><a href="customer">Customer View</a></li>
-					</ul></li>
-				<li><a href="#" class="sidebar-nav-menu"><i
-						class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i
-						class="gi gi-brush sidebar-nav-icon"></i><span
-						class="sidebar-nav-mini-hide">Ready Pages</span></a>
-					<ul>
-						<li><a href="#" class="sidebar-nav-submenu"><i
-								class="fa fa-angle-left sidebar-nav-indicator"></i>Errors</a>
-							<ul>
-								<li><a href="page_400">400</a></li>
-								<li><a href="page_401">401</a></li>
-								<li><a href="page_403">403</a></li>
-								<li><a href="page_404">404</a></li>
-								<li><a href="page_500">500</a></li>
-								<li><a href="page_503">503</a></li>
-							</ul></li>
-						<li><a href="#" class="sidebar-nav-submenu"><i
-								class="fa fa-angle-left sidebar-nav-indicator"></i>Login,
-								Register &amp; Lock</a>
-							<ul>
-								<li><a href="login">Login</a></li>
-								<li><a href="login#reminder">Password Reminder</a></li>
-								<li><a href="login#register">Register</a></li>
-								<li><a href="lock">Lock Screen</a></li>
-							</ul></li>
 					</ul></li>
 			</ul>
 			<!-- END Sidebar Navigation -->
