@@ -39,7 +39,7 @@
 		</action>
 		
 		<action name="staff">
-			<result>Staff.Page</result>
+			<result>Staff.Login</result>
 		</action>
 		
 		<action name="customer">

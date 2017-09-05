@@ -1,15 +1,75 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tiles-definitions PUBLIC
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
+	<!-- Define Struts Tile for staff-pages module -->
 
-	<definition name="Staff.Page" extends="Default.Web">
-		<put-attribute name="body" value="/staff/staff_page.jsp" />
-		<put-list-attribute name="js">
+	<!-- Define Struts Tile for Login -->
+	<definition name="Staff.Login" template="/staff-pages/login/login.jsp">
+		<put-list-attribute name="default-css">
+			<add-attribute value="/themes-admin/css/bootstrap.min.css" />
 		</put-list-attribute>
-		<put-list-attribute name="css">
+		<put-list-attribute name="themes-css">
+			<add-attribute value="/themes-admin/css/plugins.css" />
+			<add-attribute value="/themes-admin/css/main.css" />
+			<add-attribute value="/themes-admin/css/themes.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-js">
+			<add-attribute
+				value="/themes-admin/js/vendor/modernizr-respond.min.js" />
+			<add-attribute
+				value="/themes-admin/js/vendor/jquery-1.11.2.min.js" />
+			<add-attribute value="/themes-admin/js/vendor/bootstrap.min.js" />
+			<add-attribute value="/themes-admin/js/plugins.js" />
+			<add-attribute value="/themes-admin/js/app.js" />
+		</put-list-attribute>
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/themes-admin/js/pages/login.js" />
 		</put-list-attribute>
 	</definition>
+	
+	<!-- Define Struts Tile for Dashboard -->
+	<definition name="Staff.Dashboard" extends="Default.Web.Admin">
+		<put-attribute name="main-content"
+			value="/staff-pages/dashboard/dashboard.jsp" />
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/themes-admin/js/pages/dashboard.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- Define Struts Tile for Customer -->
+	<definition name="Staff.Customer" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/staff-pages/customer/customer.jsp" />
+	</definition>
+
+	<!-- Define Struts Tile for Orders -->
+	<definition name="Staff.Orders" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/staff-pages/orders/orders.jsp" />
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/themes-admin/js/pages/orders.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="Staff.OrderView" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/staff-pages/orders/order-view.jsp" />
+	</definition>
+
+	<!-- Define Struts Tile for Products -->
+	<definition name="Staff.Products" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/staff-pages/products/products.jsp" />
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/themes-admin/js/pages/products.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="Staff.ProductEdit" extends="Default.Web.Admin">
+		<put-attribute name="main-content"
+			value="/staff-pages/products/product-edit.jsp" />
+	</definition>
+
+	<!-- Define Struts Tile for Profile -->
+	<definition name="Staff.Profile" extends="Default.Web.Admin">
+		<put-attribute name="main-content" value="/staff-pages/profile/profile.jsp" />
+	</definition>
+
 </tiles-definitions>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tiles-definitions PUBLIC
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
@@ -16,9 +16,7 @@
 			<add-attribute value="/bootstrap/css/bootstrap.min.css" />
 			<add-attribute value="/bootstrap/css/bootstrap-responsive.min.css" />
 		</put-list-attribute>
-		<put-list-attribute name="default-js">
-			<add-attribute value="/bootstrap/js/bootstrap.min.js" />
-		</put-list-attribute>
+
 		<put-list-attribute name="themes-css">
 			<add-attribute value="/themes/css/bootstrappage.css" />
 			<add-attribute value="/themes/css/flexslider.css" />
@@ -26,18 +24,44 @@
 		</put-list-attribute>
 		<put-list-attribute name="themes-js">
 			<add-attribute value="/themes/js/jquery-1.7.2.min.js" />
+			<add-attribute value="/bootstrap/js/bootstrap.min.js" />
 			<add-attribute value="/themes/js/superfish.js" />
 			<add-attribute value="/themes/js/jquery.scrolltotop.js" />
+			<add-attribute value="/themes/js/common.js" />
+			<add-attribute value="/themes/js/jquery.flexslider-min.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- Define Struts Tile for Back-End module -->
+	<definition name="Default.Web.Admin" template="/layout-admin/layout-admin-default.jsp">
+		<put-attribute name="sidebar" value="/layout-admin/sidebar.jsp" />
+		<put-attribute name="header" value="/layout-admin/header.jsp" />
+		<put-attribute name="main-content"
+			value="/layout-admin/main-content-empty.jsp" />
+		<put-attribute name="footer" value="/layout-admin/footer.jsp" />
+		<put-attribute name="user-setting" value="/layout-admin/user-setting.jsp" />
+
+		<put-list-attribute name="default-css">
+			<add-attribute value="/themes-admin/css/bootstrap.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-css">
+			<add-attribute value="/themes-admin/css/plugins.css" />
+			<add-attribute value="/themes-admin/css/main.css" />
+			<add-attribute value="/themes-admin/css/themes.css" />
+		</put-list-attribute>
+		<put-list-attribute name="themes-js">
+			<add-attribute value="/themes-admin/js/vendor/modernizr-respond.min.js" />
+			<add-attribute value="/themes-admin/js/vendor/jquery-1.11.2.min.js" />
+			<add-attribute value="/themes-admin/js/vendor/bootstrap.min.js" />
+			<add-attribute value="/themes-admin/js/plugins.js" />
+			<add-attribute value="/themes-admin/js/app.js" />
+		</put-list-attribute>
+		<put-list-attribute name="pages-js">
+			<add-attribute value="/themes-admin/js/pages/empty.js" />
 		</put-list-attribute>
 	</definition>
 
 	<definition name="Default.SystemException" extends="Default.Web">
 		<put-attribute name="body" value="/exception/system_exception.jsp" />
 	</definition>
-
-	<definition name="HomePage" extends="Default.Web">
-		<put-attribute name="body" value="/index.jsp" />
-		<!-- <put-attribute name="banner" value="/layout/slider.jsp" /> -->
-	</definition>
-
 </tiles-definitions>

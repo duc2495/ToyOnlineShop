@@ -58,6 +58,7 @@
         	,/WEB-INF/configs/tiles-defs-login.xml
         	,/WEB-INF/configs/tiles-defs-staff.xml
         	,/WEB-INF/configs/tiles-defs-admin.xml
+        	,/WEB-INF/configs/tiles-defs-homepage.xml
         </param-value>
 	</context-param>
 	<!-- Define Tiles configuration files -->

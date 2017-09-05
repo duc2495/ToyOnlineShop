@@ -19,29 +19,24 @@
 	content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="description" content="" />
 
-
-<tilesx:useAttribute id="list" name="themes-css" ignore="true"
-	classname="java.util.List" />
-<c:forEach var="item" items="${list}">
-	<link rel="stylesheet" href="<c:url value='${item}'/>" type="text/css"
-		media="screen" />
-</c:forEach> 
-
-<%-- Addition JS --%>
-<tilesx:useAttribute id="list" name="themes-js" ignore="true"
-	classname="java.util.List" />
-<c:forEach var="item" items="${list}">
-	<script src="<c:url value='${item}'/>" type="text/javascript"></script>
-</c:forEach>
-
-<%-- Default Bootstrap --%>
+<%-- Default CSS --%>
 <tilesx:useAttribute id="list" name="default-css"
 	classname="java.util.List" />
 <c:forEach var="item" items="${list}">
 	<link rel="stylesheet" href="<c:url value='${item}'/>" type="text/css"
 		media="screen" />
 </c:forEach>
-<tilesx:useAttribute id="list" name="default-js"
+
+<%-- Addition CSS --%>
+<tilesx:useAttribute id="list" name="themes-css"
+	classname="java.util.List" />
+<c:forEach var="item" items="${list}">
+	<link rel="stylesheet" href="<c:url value='${item}'/>" type="text/css"
+		media="screen" />
+</c:forEach>
+
+<%-- Addition JS --%>
+<tilesx:useAttribute id="list" name="themes-js"
 	classname="java.util.List" />
 <c:forEach var="item" items="${list}">
 	<script src="<c:url value='${item}'/>" type="text/javascript"></script>
@@ -63,22 +58,5 @@
 		<tiles:insertAttribute name="footer" />
 	</div>
 	<a href="#scrolltop" class="scrollTopAll"></a>
-	<script src="themes/js/common.js"></script>
-	<script src="themes/js/jquery.flexslider-min.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			$(document).ready(function() {
-				$('.flexslider').flexslider({
-					animation : "fade",
-					slideshowSpeed : 4000,
-					animationSpeed : 600,
-					controlNav : false,
-					directionNav : true,
-					controlsContainer : ".flex-container" // the container that holds the flexslider
-				});
-			});
-		});
-	</script>
-
 </body>
 </html>
