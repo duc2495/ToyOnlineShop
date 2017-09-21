@@ -12,6 +12,8 @@
 					class="gi gi-shop_window"></i> Orders</a></li>
 			<li><a href="order_view"><i class="gi gi-shopping_cart"></i>
 					Order View</a></li>
+			<li><a href="categories "><i class="gi gi-shopping_bag"></i>
+					Categories</a></li>
 			<li><a href="products"><i class="gi gi-shopping_bag"></i>
 					Products</a></li>
 			<li><a href="product_edit"><i class="gi gi-pencil"></i>
@@ -117,9 +119,9 @@
 					<td class="hidden-xs text-center">17/01/2014</td>
 					<td class="text-center">
 						<div class="btn-group btn-group-xs">
-							<a href="order_view" data-toggle="tooltip"
-								title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-							<a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+							<a href="order_view" data-toggle="tooltip" title="View"
+								class="btn btn-default"><i class="fa fa-eye"></i></a> <a
+								href="javascript:void(0)" data-toggle="tooltip" title="Delete"
 								class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
 						</div>
 					</td>

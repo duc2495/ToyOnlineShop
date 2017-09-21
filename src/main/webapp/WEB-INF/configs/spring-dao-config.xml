@@ -5,4 +5,7 @@
 
 	<bean id="userDAO" class="framgiavn.project01.web.dao.impl.UserDAOImpl" autowire="byName">
 	</bean>
+	
+	<bean id="categoryDAO" class="framgiavn.project01.web.dao.impl.CategoryDAOImpl" autowire="byName">
+	</bean>
 </beans>

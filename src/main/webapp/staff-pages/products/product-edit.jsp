@@ -13,6 +13,8 @@
 					Orders</a></li>
 			<li><a href="order_view"><i class="gi gi-shopping_cart"></i>
 					Order View</a></li>
+			<li><a href="categories "><i class="gi gi-shopping_bag"></i>
+					Categories</a></li>
 			<li><a href="products"><i class="gi gi-shopping_bag"></i>
 					Products</a></li>
 			<li class="active"><a href="product_edit"><i
@@ -224,32 +226,6 @@
 							</a></td>
 							<td class="text-center"><label class="switch switch-primary">
 									<input type="checkbox" checked><span></span>
-							</label> Cover</td>
-							<td class="text-center"><a href="javascript:void(0)"
-								class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i>
-									Delete</a></td>
-						</tr>
-						<tr>
-							<td><a href="img/placeholders/photos/photo13.jpg"
-								data-toggle="lightbox-image"> <img
-									src="img/placeholders/photos/photo13.jpg" alt=""
-									class="img-responsive center-block" style="max-width: 110px;">
-							</a></td>
-							<td class="text-center"><label class="switch switch-primary">
-									<input type="checkbox"><span></span>
-							</label> Cover</td>
-							<td class="text-center"><a href="javascript:void(0)"
-								class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i>
-									Delete</a></td>
-						</tr>
-						<tr>
-							<td><a href="img/placeholders/photos/photo9.jpg"
-								data-toggle="lightbox-image"> <img
-									src="img/placeholders/photos/photo9.jpg" alt=""
-									class="img-responsive center-block" style="max-width: 110px;">
-							</a></td>
-							<td class="text-center"><label class="switch switch-primary">
-									<input type="checkbox"><span></span>
 							</label> Cover</td>
 							<td class="text-center"><a href="javascript:void(0)"
 								class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i>

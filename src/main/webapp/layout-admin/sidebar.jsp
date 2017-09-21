@@ -58,6 +58,7 @@
 						<li><a href="dashboard">Dashboard</a></li>
 						<li><a href="orders">Orders</a></li>
 						<li><a href="order_view">Order View</a></li>
+						<li><a href="categories">Categories</a></li>
 						<li><a href="products">Products</a></li>
 						<li><a href="product_edit">Product Edit</a></li>
 						<li><a href="customer">Customer View</a></li>

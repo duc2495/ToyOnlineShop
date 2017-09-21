@@ -9,6 +9,8 @@
 					Orders</a></li>
 			<li><a href="order_view"><i class="gi gi-shopping_cart"></i>
 					Order View</a></li>
+			<li><a href="categories "><i class="gi gi-shopping_bag"></i>
+					Categories</a></li>
 			<li><a href="products"><i class="gi gi-shopping_bag"></i>
 					Products</a></li>
 			<li><a href="product_edit"><i class="gi gi-pencil"></i>
@@ -150,11 +152,11 @@
 				<!-- Latest Orders Title -->
 				<div class="block-title">
 					<div class="block-options pull-right">
-						<a href="orders"
+						<a href="orders" class="btn btn-alt btn-sm btn-default"
+							data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
+						<a href="javascript:void(0)"
 							class="btn btn-alt btn-sm btn-default" data-toggle="tooltip"
-							title="Show All"><i class="fa fa-eye"></i></a> <a
-							href="javascript:void(0)" class="btn btn-alt btn-sm btn-default"
-							data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+							title="Settings"><i class="fa fa-cog"></i></a>
 					</div>
 					<h2>
 						<strong>Latest</strong> Orders
@@ -211,11 +213,11 @@
 				<!-- Top Products Title -->
 				<div class="block-title">
 					<div class="block-options pull-right">
-						<a href="products"
+						<a href="products" class="btn btn-alt btn-sm btn-default"
+							data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
+						<a href="javascript:void(0)"
 							class="btn btn-alt btn-sm btn-default" data-toggle="tooltip"
-							title="Show All"><i class="fa fa-eye"></i></a> <a
-							href="javascript:void(0)" class="btn btn-alt btn-sm btn-default"
-							data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+							title="Settings"><i class="fa fa-cog"></i></a>
 					</div>
 					<h2>
 						<strong>Top</strong> Products
@@ -230,8 +232,7 @@
 						<tr>
 							<td class="text-center" style="width: 100px;"><a
 								href="product_edit"><strong>PID.8765</strong></a></td>
-							<td><a href="product_edit">iPhone 6 Plus
-									32GB</a></td>
+							<td><a href="product_edit">iPhone 6 Plus 32GB</a></td>
 							<td class="text-center"><strong>435</strong> orders</td>
 							<td class="hidden-xs text-center">
 								<div class="text-warning">
@@ -257,8 +258,7 @@
 						<tr>
 							<td class="text-center" style="width: 100px;"><a
 								href="product_edit"><strong>PID.8763</strong></a></td>
-							<td><a href="product_edit">Samsung Galaxy
-									Note 4 32GB</a></td>
+							<td><a href="product_edit">Samsung Galaxy Note 4 32GB</a></td>
 							<td class="text-center"><strong>440</strong> orders</td>
 							<td class="hidden-xs text-center">
 								<div class="text-warning">

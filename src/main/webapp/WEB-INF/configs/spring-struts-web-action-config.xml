@@ -8,6 +8,12 @@
 	<bean id="springUserAction" class="framgiavn.project01.web.action.UserAction"
 		scope="prototype" autowire="byName">
 	</bean>
+
+	<!-- ================== CATEGORY MODULE ================== -->
+	<bean id="springCategoryAction" class="framgiavn.project01.web.action.CategoryAction"
+		scope="prototype" autowire="byName">
+	</bean>
+
 	<!-- ================== TEST MODULE ================== -->
 	<bean id="testClass" class="framgiavn.project01.web.ulti.TestClass"
 		scope="prototype" autowire="byName">

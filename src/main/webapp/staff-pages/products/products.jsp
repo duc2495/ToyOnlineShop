@@ -12,6 +12,8 @@
 					Orders</a></li>
 			<li><a href="order_view"><i class="gi gi-shopping_cart"></i>
 					Order View</a></li>
+			<li><a href="categories "><i class="gi gi-shopping_bag"></i>
+					Categories</a></li>
 			<li class="active"><a href="products"><i
 					class="gi gi-shopping_bag"></i> Products</a></li>
 			<li><a href="product_edit"><i class="gi gi-pencil"></i>
@@ -25,8 +27,7 @@
 	<!-- Quick Stats -->
 	<div class="row text-center">
 		<div class="col-sm-6 col-lg-3">
-			<a href="product_edit"
-				class="widget widget-hover-effect2">
+			<a href="product_edit" class="widget widget-hover-effect2">
 				<div class="widget-extra themed-background-success">
 					<h4 class="widget-content-light">
 						<strong>Add New</strong> Product
@@ -114,9 +115,9 @@
 					<td class="hidden-xs text-center">06/05/2014</td>
 					<td class="text-center">
 						<div class="btn-group btn-group-xs">
-							<a href="product_edit" data-toggle="tooltip"
-								title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-							<a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+							<a href="product_edit" data-toggle="tooltip" title="Edit"
+								class="btn btn-default"><i class="fa fa-pencil"></i></a> <a
+								href="javascript:void(0)" data-toggle="tooltip" title="Delete"
 								class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
 						</div>
 					</td>
@@ -130,9 +131,9 @@
 					<td class="hidden-xs text-center">11/02/2014</td>
 					<td class="text-center">
 						<div class="btn-group btn-group-xs">
-							<a href="product_edit" data-toggle="tooltip"
-								title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-							<a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+							<a href="product_edit" data-toggle="tooltip" title="Edit"
+								class="btn btn-default"><i class="fa fa-pencil"></i></a> <a
+								href="javascript:void(0)" data-toggle="tooltip" title="Delete"
 								class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
 						</div>
 					</td>
@@ -146,9 +147,9 @@
 					<td class="hidden-xs text-center">10/08/2014</td>
 					<td class="text-center">
 						<div class="btn-group btn-group-xs">
-							<a href="product_edit" data-toggle="tooltip"
-								title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-							<a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+							<a href="product_edit" data-toggle="tooltip" title="Edit"
+								class="btn btn-default"><i class="fa fa-pencil"></i></a> <a
+								href="javascript:void(0)" data-toggle="tooltip" title="Delete"
 								class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
 						</div>
 					</td>

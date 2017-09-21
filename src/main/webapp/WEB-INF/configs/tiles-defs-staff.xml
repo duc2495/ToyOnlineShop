@@ -17,10 +17,8 @@
 			<add-attribute value="/themes-admin/css/themes.css" />
 		</put-list-attribute>
 		<put-list-attribute name="themes-js">
-			<add-attribute
-				value="/themes-admin/js/vendor/modernizr-respond.min.js" />
-			<add-attribute
-				value="/themes-admin/js/vendor/jquery-1.11.2.min.js" />
+			<add-attribute value="/themes-admin/js/vendor/modernizr-respond.min.js" />
+			<add-attribute value="/themes-admin/js/vendor/jquery-1.11.2.min.js" />
 			<add-attribute value="/themes-admin/js/vendor/bootstrap.min.js" />
 			<add-attribute value="/themes-admin/js/plugins.js" />
 			<add-attribute value="/themes-admin/js/app.js" />
@@ -29,7 +27,7 @@
 			<add-attribute value="/themes-admin/js/pages/login.js" />
 		</put-list-attribute>
 	</definition>
-	
+
 	<!-- Define Struts Tile for Dashboard -->
 	<definition name="Staff.Dashboard" extends="Default.Web.Admin">
 		<put-attribute name="main-content"
@@ -53,6 +51,24 @@
 	</definition>
 	<definition name="Staff.OrderView" extends="Default.Web.Admin">
 		<put-attribute name="main-content" value="/staff-pages/orders/order-view.jsp" />
+	</definition>
+
+	<!-- Define Struts Tile for Categories -->
+	<definition name="Staff.Categories" extends="Default.Web.Admin">
+		<put-attribute name="main-content"
+			value="/staff-pages/categories/categories.jsp" />
+	</definition>
+	<definition name="Staff.CategoryAdd" extends="Default.Web.Admin">
+		<put-attribute name="main-content"
+			value="/staff-pages/categories/category-add.jsp" />
+	</definition>
+	<definition name="Staff.CategoryEdit" extends="Default.Web.Admin">
+		<put-attribute name="main-content"
+			value="/staff-pages/categories/category-edit.jsp" />
+	</definition>
+	<definition name="Staff.CategoryError" extends="Default.Web.Admin">
+		<put-attribute name="main-content"
+			value="/staff-pages/categories/error.jsp" />
 	</definition>
 
 	<!-- Define Struts Tile for Products -->

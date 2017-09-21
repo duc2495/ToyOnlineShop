@@ -7,9 +7,9 @@
 
 	<definition name="User.Login" extends="Default.Web">
 		<put-attribute name="body" value="/view/login.jsp" />
-		<put-list-attribute name="js">
-		</put-list-attribute>
-		<put-list-attribute name="css">
-		</put-list-attribute>
+	</definition>
+
+	<definition name="User.LoginError" extends="Default.Web">
+		<put-attribute name="body" value="/view/login_error.jsp" />
 	</definition>
 </tiles-definitions>

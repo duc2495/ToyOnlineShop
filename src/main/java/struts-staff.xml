@@ -35,6 +35,23 @@
 			<result>Staff.OrderView</result>
 		</action>
 
+		<action name="categories">
+			<result>Staff.Categories</result>
+		</action>
+
+		<action name="category_add">
+			<result>Staff.CategoryAdd</result>
+		</action>
+
+		<action name="category_edit">
+			<result>Staff.CategoryEdit</result>
+		</action>
+		
+		<action name="category_action" class="springCategoryAction" method="addCategory">
+			<result name="success">Staff.Categories</result>
+			<result name="error">Staff.CategoryError</result>
+		</action>
+
 		<action name="customer">
 			<result>Staff.Customer</result>
 		</action>

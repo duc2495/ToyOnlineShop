@@ -17,7 +17,7 @@ public class UserAction extends ActionSupport {
 
 	private UserBusiness userBusiness = null;
 	private UserInfo user = null;
-	
+
 	public void setUserBusiness(UserBusiness userBusiness) {
 		this.userBusiness = userBusiness;
 	}
@@ -39,10 +39,13 @@ public class UserAction extends ActionSupport {
 		return SUCCESS;
 	}
 
+	public String userLogin() {
+		
+		return SUCCESS;
+	}
 
 	public String homePage() {
-		System.out
-				.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		return SUCCESS;
 	}
 

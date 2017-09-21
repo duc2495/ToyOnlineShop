@@ -29,23 +29,27 @@
 		<action name="" class="springUserAction" method="homePage">
 			<result>HomePage</result>
 		</action>
-		
+
 		<action name="login">
 			<result>User.Login</result>
 		</action>
-		
+
+		<action name="loginfail">
+			<result>User.LoginError</result>
+		</action>
+
 		<action name="admin">
 			<result>Admin.Page</result>
 		</action>
-		
+
 		<action name="staff">
 			<result>Staff.Login</result>
 		</action>
-		
+
 		<action name="customer">
 			<result>Customer.Page</result>
 		</action>
-		
+
 		<action name="logout">
 			<result type="redirect">
 				<param name="location">/login?logout</param>
@@ -55,6 +59,6 @@
 
 	<!-- ===== Include Web Module Configuration ===== -->
 	<include file="struts-customer.xml" />
-	<include file="struts-admin.xml"/>
-	<include file="struts-staff.xml"/>
+	<include file="struts-admin.xml" />
+	<include file="struts-staff.xml" />
 </struts>

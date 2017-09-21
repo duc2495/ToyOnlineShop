@@ -41,6 +41,7 @@
 		<property name="mappingResources">
 			<list>
 				<value>framgiavn/project01/web/model/hbm/User.hbm.xml</value>
+				<value>framgiavn/project01/web/model/hbm/Category.hbm.xml</value>
 			</list>
 		</property>
 

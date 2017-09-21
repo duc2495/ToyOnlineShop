@@ -14,4 +14,11 @@
 		</property>
 	</bean>
 
+	<bean id="categoryBusiness" parent="transactionProxyTemplate" autowire="byName">
+		<property name="target">
+			<bean class="framgiavn.project01.web.business.impl.CategoryBusinessImpl" autowire="byName">
+			</bean>
+		</property>
+	</bean>
+	
 </beans>

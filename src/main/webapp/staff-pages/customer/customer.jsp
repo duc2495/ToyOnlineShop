@@ -12,12 +12,14 @@
 					Orders</a></li>
 			<li><a href="order_view"><i class="gi gi-shopping_cart"></i>
 					Order View</a></li>
-			<li><a href="products"><i class="gi gi-shopping_bag"></i>
-					Products</a></li>
+			<li><a href="categories "><i class="gi gi-shopping_bag"></i>
+					Categories</a></li>
+			<li><a href="products"><i
+					class="gi gi-shopping_bag"></i> Products</a></li>
 			<li><a href="product_edit"><i class="gi gi-pencil"></i>
 					Product Edit</a></li>
-			<li class="active"><a href="customer"><i class="gi gi-user"></i>
-					Customer View</a></li>
+			<li class="active"><a href="customer"><i class="gi gi-user"></i> Customer
+					View</a></li>
 		</ul>
 	</div>
 	<!-- END eCommerce Customer Header -->

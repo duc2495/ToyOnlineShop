@@ -12,6 +12,8 @@
 					Orders</a></li>
 			<li class="active"><a href="order_view"><i
 					class="gi gi-shopping_cart"></i> Order View</a></li>
+			<li><a href="categories "><i class="gi gi-shopping_bag"></i>
+					Categories</a></li>
 			<li><a href="products"><i class="gi gi-shopping_bag"></i>
 					Products</a></li>
 			<li><a href="product_edit"><i class="gi gi-pencil"></i>
@@ -112,8 +114,7 @@
 					</tr>
 					<tr>
 						<td class="text-center"><a href="product_edit"><strong>PID.8726</strong></a></td>
-						<td><a href="product_edit">Forza
-								Motorsport 5</a></td>
+						<td><a href="product_edit">Forza Motorsport 5</a></td>
 						<td class="text-center"><strong>368</strong></td>
 						<td class="text-center"><strong>1</strong></td>
 						<td class="text-right"><strong>$59,00</strong></td>
@@ -129,8 +130,7 @@
 					</tr>
 					<tr>
 						<td class="text-center"><a href="product_edit"><strong>PID.8728</strong></a></td>
-						<td><a href="product_edit">Killzone:
-								Shadow Fall</a></td>
+						<td><a href="product_edit">Killzone: Shadow Fall</a></td>
 						<td class="text-center"><strong>368</strong></td>
 						<td class="text-center"><strong>1</strong></td>
 						<td class="text-right"><strong>$59,00</strong></td>
@@ -138,8 +138,7 @@
 					</tr>
 					<tr>
 						<td class="text-center"><a href="product_edit"><strong>PID.8763</strong></a></td>
-						<td><a href="product_edit">Little Big
-								Planet 3</a></td>
+						<td><a href="product_edit">Little Big Planet 3</a></td>
 						<td class="text-center"><strong>150</strong></td>
 						<td class="text-center"><strong>1</strong></td>
 						<td class="text-right"><strong>$59,00</strong></td>
